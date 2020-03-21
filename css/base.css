@@ -1,0 +1,1001 @@
+/* Global Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1150px;
+    margin: auto;
+    position: relative;
+}
+
+.box-shadow {
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+/* /Global Styles */
+
+
+/* Header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 48px;
+    background: #fff;
+    transition: 0.5s;
+}
+
+header #logo {
+    position: absolute;
+    padding-top: 6px;
+    top: 2px;
+    left: 2px;
+}
+
+header #logo h1 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #555;
+}
+
+header #logo h1 span {
+    color: #71c55d;
+}
+
+header nav ul {
+    position: absolute;
+    right: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    text-transform: capitalize;
+    margin-left: 7px;
+    padding: 8px;
+    line-height: 30px
+}
+
+header nav ul li a {
+    color: #555;
+    font-weight: 400;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active,
+.banner ul li a:hover {
+    color: #71c55d;
+}
+
+
+/* /Header */
+/* Drop Down */
+
+.drop-down {
+    position: absolute;
+    width: 180px;
+    padding: 10px;
+    right: 28px;
+    top: 50px;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    background: #fff;
+    height: 158px;
+    display: none;
+}
+
+.drop-down ul li {
+    padding: 5px 10px;
+    color: #333;
+    font-size: 14px;
+}
+
+#drop:hover .drop-down {
+    display: block;
+}
+
+/* /Drop Down */
+
+/* Banner */
+
+.banner {
+    margin-top: 80px;
+    position: relative
+}
+
+.banner .container {
+    text-align: center
+}
+
+.banner h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #71c55d;
+    font-family: 'philosopher', sans-serif;
+    margin-bottom: 10px;
+}
+
+.banner h2 {
+    color: #777;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.banner .image {
+    margin-bottom: 30px;
+    text-align: center
+}
+
+.banner .button {
+    color: #71c55d;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    border: 2px solid #71c55d;
+    padding: 11px 36px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    display: inline-block;
+    transition: 0.5s;
+    letter-spacing: 1px;
+}
+
+.banner .button:hover {
+    color: #fff;
+    background-color: #71c55d;
+}
+
+.banner ul li {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 4px 20px;
+}
+
+.banner ul li a {
+    color: #555;
+    transition: 0.3s;
+    letter-spacing: 2px;
+}
+
+
+/* /Banner */
+
+
+/* Start */
+
+.start {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.start h1 {
+    font-size: 45px;
+    font-weight: 10;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.start h6 {
+    color: #626262;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 80px;
+}
+
+.start ul li {
+    display: inline-block;
+    width: 26%;
+    padding: 30px 20px;
+    transition: all 0.5s ease-in-out 0s;
+    margin: 0 15px;
+}
+
+.start ul li:hover,
+.features ul li:hover {
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+.start ul li img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.start ul li h4 {
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.start ul li p {
+    color: #505050;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.start ul li a {
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.3s;
+    color: #505050;
+    letter-spacing: 2px;
+}
+
+.start ul li a:hover {
+    color: #71c55d;
+}
+
+
+/* /Start */
+
+
+/* About */
+
+#about {
+    padding: 80px 0;
+    position: relative;
+    height: 526.4px;
+}
+
+#about .screenshot {
+    position: absolute;
+    left: 195px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: 285px;
+}
+
+#about .screenshot img {
+    width: 255px;
+    height: 526.4px;
+}
+
+#about .about-text {
+    position: absolute;
+    width: 475px;
+    height: 526.4px;
+    right: 195px;
+    box-sizing: border-box;
+    padding: 60px 15px 0;
+}
+
+#about .about-text h1 {
+    color: #252525;
+    font-family: "roboto";
+    font-size: 39px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#about .about-text h1 span {
+    font-weight: 700;
+    padding-right: 10px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+#about .about-text p {
+    color: #505050;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+#about .about-text ul li {
+    color: #626262;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 36px;
+    text-transform: capitalize;
+}
+
+#about .about-text ul li i {
+    padding-right: 20px;
+}
+
+
+/* /About */
+
+
+/* Features */
+
+.features {
+    padding: 80px 0;
+    text-align: center
+}
+
+.features h1 {
+    font-size: 45px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.features .text {
+    color: #626262;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 80px;
+    text-transform: capitalize;
+}
+
+.features ul li {
+    display: inline-block;
+    width: 22%;
+    box-sizing: border-box;
+    margin: 0 15px 30px;
+    padding: 30px 20px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.features ul li img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.features ul li h4 {
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.features ul li p {
+    color: #505050;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 2;
+}
+
+
+/* /Features */
+
+
+/* Screenshots */
+
+#screenshots,
+#team,
+#pricing,
+#blog,
+#contact {
+    padding: 80px 0;
+    text-align: center
+}
+
+#screenshots h1,
+#team h1,
+#pricing h1,
+#blog h1,
+#contact h1 {
+    font-size: 45px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+#screenshots p,
+#team p,
+#pricing p,
+#blog p,
+#contact p {
+    color: #626262;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 80px;
+    text-transform: capitalize;
+}
+
+#screenshots ul li {
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#screenshots ul .no-mr {
+    margin-right: 0;
+}
+
+#screenshots ul li img {
+    width: 255px;
+    height: 453.23px;
+}
+
+#screenshots .circles,
+.speak .circles {
+    height: 25.6px;
+    margin-top: 10px;
+}
+
+#screenshots .circles span,
+.speak .circles span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 5px 5px;
+}
+
+#screenshots .circles .active,
+#screenshots .circles span:hover,
+.speak .circles span:hover,
+.speak .circles .active {
+    background-color: #71c55d;
+    cursor: pointer;
+}
+
+
+/* /Screenshots */
+
+
+/* Team Mmebers */
+
+#team ul li {
+    display: inline-block;
+    margin: 0 15px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+#team ul li img {
+    width: 254px;
+    height: 246.61px;
+    position: relative;
+}
+
+#team ul li .information {
+    box-sizing: border-box;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    bottom: -133px;
+    height: 50%;
+    transition: all 0.5s ease-in-out 0s;
+    background: #fff;
+}
+
+#team ul li:hover .information {
+    bottom: 0;
+    z-index: 2;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#team ul li .information .icons {
+    margin-bottom: 16px;
+}
+
+#team ul li .information .icons a {
+    font-size: 13px;
+    color: #626262;
+}
+
+#team ul li .information .icons a i {
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.3s;
+}
+
+#team ul li .information .icons a i:hover {
+    color: #71c55d;
+}
+
+#team ul li .information h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+#team ul li .information h3 {
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+
+/* Team Mmebers */
+
+
+/* Speak */
+
+.speak {
+    margin: 80px auto;
+    width: 730px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 49px 20px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+}
+
+.speak h1 {
+    font-size: 45px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.speak p {
+    color: #505050;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.speak h4 {
+    display: inline-block;
+    font: 700 12px Lato, sans-serif;
+    color: #000;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.speak h4 span {
+    font-size: 12px;
+    font-weight: 300;
+    margin-left: 26px;
+    letter-spacing: 1px;
+}
+
+.speak .circles {
+    margin-top: 30px;
+}
+
+.speak .circles span {
+    margin: 0 13px;
+}
+
+
+/* /Speak */
+
+
+/* Pricing */
+
+#pricing ul .display {
+    display: inline-block;
+    margin: 0 15px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 4px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px 15px;
+    width: 19%;
+}
+
+#pricing ul h6 {
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 2;
+    padding-bottom: 30px;
+}
+
+#pricing ul h4 {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+#pricing ul .display ul {
+    margin: 10px auto;
+}
+
+#pricing ul .display ul li {
+    color: #626262;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 30px;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+    padding: 12px 0;
+}
+
+#pricing ul .display ul li span {
+    font-weight: bold;
+    color: #3c4857;
+}
+
+#pricing ul .display a {
+    background: #71c55d;
+    color: #fff;
+    margin: 0;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#pricing ul .display a:hover {
+    background-color: #55b03f;
+}
+
+
+/* /Pricing */
+
+
+/* Blog */
+
+#blog ul li {
+    display: inline-block;
+    width: 30%;
+    padding: 0 15px;
+    text-align: left;
+    position: relative
+}
+
+#blog ul li img {
+    width: 100%;
+}
+
+#blog ul li section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    display: inline-block;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 4px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    top: -3px;
+}
+
+#blog ul li section h4 {
+    color: #555;
+    line-height: 24px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: normal;
+    letter-spacing: 0;
+    font-size: 16px;
+}
+
+#blog ul li section h4 a {
+    color: #555;
+    transition: 0.3s;
+}
+
+#blog ul li section h4 a:hover {
+    color: #71c55d;
+}
+
+#blog ul li section span {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #333;
+    float: left;
+}
+
+#blog ul li section .read {
+    color: #505050;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+    text-transform: capitalize;
+    float: right;
+}
+
+
+/* /Blog */
+
+
+/* Subscribe */
+
+.subscribe {
+    background: transparent url(../img/newsletter-bg.jpg) no-repeat center top fixed;
+    background-size: cover;
+    text-align: center
+}
+
+.subscribe .overlay {
+    background: linear-gradient(rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.2) 95%);
+    padding: 80px 0;
+    height: 100%;
+    width: 100%;
+}
+
+.subscribe .email input {
+    border: 1px solid #dddddd;
+    color: #888;
+    font-size: 11px;
+    font-weight: 600;
+    height: 50px;
+    text-align: center;
+    width: 378px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    display: inline-block;
+}
+
+.subscribe .overlay .email input:focus {
+    border: 1px solid #71c55d;
+}
+
+.subscribe .email button {
+    height: 50px;
+    width: 162px;
+    transition: 0.3s;
+    border: none;
+    background: #71c55d;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 15px 40px;
+    position: relative;
+    right: 4px;
+}
+
+.subscribe .email button i {
+    padding-right: 10px;
+}
+
+.subscribe .email button:hover,
+.subscribe .icons a:hover {
+    background: #55b03f;
+    cursor: pointer;
+}
+
+.subscribe .icons {
+    margin-top: 40px;
+}
+
+.subscribe .icons a,
+#contact .examples .icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #71c55d;
+    line-height: 35px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.subscribe .icons a i,
+#contact .examples .icons a i {
+    color: #fff;
+    font-size: 13px;
+}
+
+
+/* /Subscribe */
+
+
+/* Contact */
+#contact {
+    position: relative;
+    height: 506.4px;
+}
+
+#contact .examples {
+    width: 255px;
+    text-align: left;
+    display: inline-block;
+    position: absolute;
+    padding: 0 15px;
+    left: 196px;
+}
+
+#contact .examples div {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#contact .examples div p {
+    font-size: 14px;
+    display: inline-block;
+    padding: 0 0 10px 20px;
+    color: #505050;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    margin-bottom: 0px
+}
+
+#contact .examples div .diff-pl {
+    padding-left: 27px;
+    padding-top: 3px;
+}
+
+#contact .examples div i {
+    font-size: 32px;
+    color: #71c55d;
+}
+
+#contact .examples .icons a {
+    margin: 0;
+    text-align: center;
+}
+
+#contact .boxes {
+    width: 445px;
+    display: inline-block;
+    position: absolute;
+    padding: 0 15px;
+    right: 196px;
+}
+
+#contact .boxes input {
+    display: block;
+    font-size: 14px;
+    padding: 12px 10px;
+    line-height: 1;
+    width: 100%;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    margin-bottom: 19px;
+}
+
+#contact .boxes textarea {
+    width: 100%;
+    display: block;
+    padding: 12px 10px;
+    font-size: 14px;
+    line-height: 1;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    margin-bottom: 19px;
+}
+
+#contact .boxes button {
+    background: #71c55d;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    font: 400 13.3333px Arial;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+#contact .boxes button:hover {
+    background-color: #91d781;
+    cursor: pointer;
+}
+
+/* /Contact */
+
+/* Footer */
+
+.policy {
+    background: #2a2c30;
+    padding: 50px 0;
+    position: relative;
+    height: 170.2px;
+}
+
+.policy #brand {
+    width: 33%;
+    display: inline-block;
+    padding: 0 15px;
+    position: absolute;
+}
+
+.policy .about-us {
+    width: 12%;
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+    left: 430px;
+}
+
+.policy #brand a {
+    display: inline-block;
+    font-family: "Philosopher", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    height: 100%;
+    letter-spacing: 0.2em;
+    padding-bottom: 5px;
+    margin-right: 16px;
+    color: #fff;
+}
+
+.policy #brand p {
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 2;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.policy .about-us h3 {
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+.policy .about-us a {
+    color: #fff;
+    font-size: 12px;
+    padding-left: 5px;
+    line-height: 30px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+/* /Footer */
+
+/* Copyright */
+
+.copyright {
+    padding: 25px;
+    text-align: center;
+}
+
+.copyright p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #505050;
+    line-height: 2;
+}
+
+.copyright p a {
+    color: #71c55d;
+}
+
+.copyright p a:hover {
+    text-decoration: underline;
+}
+
+/* /Copyright */
